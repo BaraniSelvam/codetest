@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<xs:schema version="1.0" targetNamespace="http://jaxws.services.java.main/" xmlns:tns="http://jaxws.services.java.main/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <xs:element name="gcd" type="tns:gcd"/>
+
+  <xs:element name="gcdList" type="tns:gcdList"/>
+
+  <xs:element name="gcdListResponse" type="tns:gcdListResponse"/>
+
+  <xs:element name="gcdResponse" type="tns:gcdResponse"/>
+
+  <xs:element name="gcdSum" type="tns:gcdSum"/>
+
+  <xs:element name="gcdSumResponse" type="tns:gcdSumResponse"/>
+
+  <xs:complexType name="gcdSum">
+    <xs:sequence/>
+  </xs:complexType>
+
+  <xs:complexType name="gcdSumResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:int"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="gcdList">
+    <xs:sequence/>
+  </xs:complexType>
+
+  <xs:complexType name="gcdListResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="gcd">
+    <xs:sequence/>
+  </xs:complexType>
+
+  <xs:complexType name="gcdResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:int"/>
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>
+
